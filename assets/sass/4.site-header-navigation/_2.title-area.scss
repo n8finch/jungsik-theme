@@ -5,6 +5,17 @@
   float: left;
   padding: 10px 0;
   width: 300px;
+
+  .links-before-header {
+    width: 100%;
+
+    .language-links{
+      float: left;
+    }
+    .facebook-links {
+      float: right;
+    }
+  }
 }
 
 .header-full-width .title-area {
@@ -17,6 +28,7 @@
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
+  clear: both;
 
   a,
   a:hover,

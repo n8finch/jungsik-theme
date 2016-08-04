@@ -1,10 +1,13 @@
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
+
 .site-header {
   background-color: #fff;
+  max-height: 255px;
+  overflow: auto;
 }
 
 .site-header > .wrap {
-  padding: 20px 0;
+  padding: 0 20px;
 }

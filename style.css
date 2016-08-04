@@ -83,6 +83,21 @@
  */
 /* ## Typographical Elements
 --------------------------------------------- */
+@font-face {
+  font-family: 'MyFontFamily';
+  src: url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.eot?iefix") format("eot"), url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.woff") format("woff"), url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.ttf") format("truetype"), url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MyFontFamily';
+  src: url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.eot?iefix") format("eot"), url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.woff") format("woff"), url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.ttf") format("truetype"), url("http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-weight: bold;
+}
 html {
   font-size: 62.5%;
   /* 10px browser default */
@@ -96,7 +111,7 @@ body > div {
 body {
   background-color: #eee;
   color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'MyFontFamily', 'Source Sans Pro', sans-serif;
   font-size: 20px;
   font-size: 2rem;
   -webkit-font-smoothing: antialiased;
@@ -190,7 +205,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'MyFontFamily', 'Source Sans Pro', sans-serif;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 10px;
@@ -758,15 +773,23 @@ th:first-child {
 
 /* ## Site Containers
 --------------------------------------------- */
+.site-container {
+  max-height: 100vh;
+}
+
 .site-inner,
 .wrap {
   margin: 0 auto;
-  max-width: 1280px;
+}
+@media only screen and (max-width: 1340px) {
+  .site-inner,
+  .wrap {
+    max-width: 100%;
+  }
 }
 
 .site-inner {
   clear: both;
-  padding-top: 40px;
   word-wrap: break-word;
 }
 
@@ -1183,10 +1206,12 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
   background-color: #fff;
+  max-height: 255px;
+  overflow: auto;
 }
 
 .site-header > .wrap {
-  padding: 20px 0;
+  padding: 0 20px;
 }
 
 /* ## Title Area
@@ -1195,6 +1220,15 @@ img.alignright,
   float: left;
   padding: 10px 0;
   width: 300px;
+}
+.title-area .links-before-header {
+  width: 100%;
+}
+.title-area .links-before-header .language-links {
+  float: left;
+}
+.title-area .links-before-header .facebook-links {
+  float: right;
 }
 
 .header-full-width .title-area {
@@ -1207,6 +1241,7 @@ img.alignright,
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
+  clear: both;
 }
 .site-title a,
 .site-title a:hover,
@@ -1531,11 +1566,14 @@ p.entry-meta {
   color: #fff;
 }
 
+address {
+  font-size: 1rem;
+}
+
 .front-page-image {
-  background: url(http://jungsik.dev/wp-content/uploads/2016/08/bg-1.jpg);
   background-size: cover;
-  height: 80vh;
   background-position: center;
+  height: 80vh;
 }
 
 /* # Sidebars
@@ -1599,11 +1637,6 @@ p.entry-meta {
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1340px) {
-  .site-inner,
-  .wrap {
-    max-width: 1140px;
-  }
-
   .content-sidebar-sidebar .content-sidebar-wrap,
   .sidebar-content-sidebar .content-sidebar-wrap,
   .sidebar-sidebar-content .content-sidebar-wrap {

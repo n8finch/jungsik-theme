@@ -1,5 +1,23 @@
 /* ## Typographical Elements
 --------------------------------------------- */
+@font-face {
+  font-family: 'MyFontFamily';
+  src: url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.eot');							/* IE9 Compat Modes */
+  src: url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.eot?iefix') format('eot'),		/* IE6-IE8 */
+  url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.woff') format('woff'),			/* Modern Browsers */
+  url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.ttf') format('truetype'),		/* Safari, Android, iOS */
+  url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_book-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MyFontFamily';
+  src: url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.eot');							/* IE9 Compat Modes */
+  src: url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.eot?iefix') format('eot'),		/* IE6-IE8 */
+  url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.woff') format('woff'),			/* Modern Browsers */
+  url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.ttf') format('truetype'),		/* Safari, Android, iOS */
+  url('http://jungsik.dev/wp-content/themes/jungsik-theme/fonts/neuzeit_js_-_bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: bold;
+}
+
 
 html {
   font-size: 62.5%; /* 10px browser default */
@@ -13,7 +31,7 @@ body > div {
 body {
   background-color: #eee;
   color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'MyFontFamily', 'Source Sans Pro', sans-serif;
   font-size: 20px;
   font-size: 2rem;
   -webkit-font-smoothing: antialiased;
@@ -109,7 +127,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'MyFontFamily', 'Source Sans Pro', sans-serif;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 10px;
