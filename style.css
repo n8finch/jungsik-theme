@@ -791,6 +791,8 @@ th:first-child {
 .site-inner {
   clear: both;
   word-wrap: break-word;
+  background-color: #BA8748;
+  min-height: 75vh;
 }
 
 .landing-page .site-inner {
@@ -1238,16 +1240,18 @@ img.alignright,
 }
 
 .site-title {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
+  letter-spacing: 7px;
   clear: both;
 }
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
-  color: #333;
+  color: #BA8748;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header-image .title-area {
@@ -1308,7 +1312,12 @@ img.alignright,
 }
 
 .genesis-nav-menu a {
-  color: #333;
+  color: #BA8748;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   text-decoration: none;
   display: block;
   padding: 32px 20px;
@@ -1319,7 +1328,6 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-  color: #c3251d;
   text-decoration: underline;
 }
 
@@ -1567,7 +1575,11 @@ p.entry-meta {
 }
 
 address {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: #BA8748;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .front-page-image {

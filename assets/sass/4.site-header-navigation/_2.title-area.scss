@@ -25,16 +25,18 @@
 }
 
 .site-title {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
+  letter-spacing: 7px;
   clear: both;
 
   a,
   a:hover,
   a:focus {
-    color: #333;
+    color: $jungsik;
     text-decoration: none;
+    text-transform: uppercase;
   }
 }
 
