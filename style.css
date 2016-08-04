@@ -1200,6 +1200,7 @@ img.alignright,
 .header-full-width .title-area {
   float: none;
   width: 100%;
+  text-align: center;
 }
 
 .site-title {
@@ -1235,7 +1236,8 @@ img.alignright,
 .site-description {
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: .00000000001px;
+  text-indent: -999999px;
 }
 
 .site-description,
@@ -1260,6 +1262,7 @@ img.alignright,
   font-weight: 600;
   line-height: 1;
   width: 100%;
+  text-align: center;
 }
 
 .genesis-nav-menu .menu-item {
@@ -1364,7 +1367,6 @@ img.alignright,
 --------------------------------------------- */
 .nav-primary {
   background-color: #fff;
-  border-top: 1px solid #eee;
 }
 
 /* ## Footer Navigation
@@ -1527,6 +1529,13 @@ p.entry-meta {
 .archive-pagination .active a {
   background-color: #c3251d;
   color: #fff;
+}
+
+.front-page-image {
+  background: url(http://jungsik.dev/wp-content/uploads/2016/08/bg-1.jpg);
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
 }
 
 /* # Sidebars

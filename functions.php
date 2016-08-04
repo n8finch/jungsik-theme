@@ -20,3 +20,8 @@ include_once( 'lib/functions/autoload.php' );
 //* Start the engine (i.e. the Genesis Framework)
 include_once( get_template_directory() . '/lib/init.php' );
 
+
+//TODO Come back and re-arrange this to another part of the theme
+remove_action( 'genesis_after_header', 'genesis_do_nav');
+
+

@@ -31,3 +31,4 @@ function enqueue_scripts_styles() {
 	wp_localize_script( CHILD_TEXT_DOMAIN . '-responsive-menu', 'n8finchL10n', $localized_script_args );
 
 }
+

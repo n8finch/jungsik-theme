@@ -60,8 +60,8 @@ function add_theme_supports() {
 		'genesis-after-entry-widget-area' => null,
 		'genesis-footer-widgets'          => '3',
 		'genesis-menus'                   => array(
-			'primary'   => __( 'After Header Menu', 'CHILD_TEXT_DOMAIN' ),
-			'secondary' => __( 'Footer Menu', 'CHILD_TEXT_DOMAIN' )
+			'primary'   => __( 'Primary', 'CHILD_TEXT_DOMAIN' ),
+			'footer' => __( 'Footer', 'CHILD_TEXT_DOMAIN' )
 		),
 
 	); // end $config array
@@ -154,3 +154,5 @@ function get_theme_settings_defaults() {
 	);
 
 }
+
+

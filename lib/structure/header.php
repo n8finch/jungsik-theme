@@ -11,3 +11,5 @@
 
 namespace n8finch\dev\structure;
 
+
+add_action( 'genesis_header', 'genesis_do_nav', 11 );

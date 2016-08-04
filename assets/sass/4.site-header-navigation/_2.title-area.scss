@@ -10,6 +10,7 @@
 .header-full-width .title-area {
   float: none;
   width: 100%;
+  text-align: center;
 }
 
 .site-title {
@@ -51,7 +52,8 @@
 .site-description {
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: .00000000001px;
+  text-indent: -999999px;
 }
 
 .site-description,
