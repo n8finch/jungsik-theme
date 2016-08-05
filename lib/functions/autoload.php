@@ -29,6 +29,7 @@ function load_nonadmin_files() {
 		'structure/footer.php',
 		'structure/page-homepage.php',
 		'structure/page-hello.php',
+		'structure/page-eat.php',
 		'structure/page-bar.php',
 		'structure/page-visit.php',
 		'structure/page-press.php',

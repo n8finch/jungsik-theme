@@ -69,6 +69,14 @@
 	- Max-width: 860px
 - Print Styles
 */
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
 /*
  * HEADER MODULE
  * Note: these do not compile
@@ -792,7 +800,11 @@ th:first-child {
   clear: both;
   word-wrap: break-word;
   background-color: #BA8748;
+  color: #fff;
+  font-size: 1.2rem;
   min-height: 75vh;
+  text-align: center;
+  padding: 10px 20px;
 }
 
 .landing-page .site-inner {
@@ -1586,6 +1598,64 @@ address {
   background-size: cover;
   background-position: center;
   height: 80vh;
+}
+
+.hello-page-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hello-page-container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.hello-page-container .hello-subtitle,
+.hello-page-container .hello-page-content,
+.hello-page-container .staff-name-position,
+.hello-page-container .staff-bios,
+.hello-page-container .hello-page-bottom-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  margin-bottom: 20px;
+}
+.hello-page-container .hello-subtitle:last-child,
+.hello-page-container .hello-page-content:last-child,
+.hello-page-container .staff-name-position:last-child,
+.hello-page-container .staff-bios:last-child,
+.hello-page-container .hello-page-bottom-content:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 860px) {
+  .hello-page-container .hello-subtitle,
+  .hello-page-container .hello-page-content,
+  .hello-page-container .staff-name-position,
+  .hello-page-container .staff-bios,
+  .hello-page-container .hello-page-bottom-content {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .hello-page-container .hello-subtitle:last-child,
+  .hello-page-container .hello-page-content:last-child,
+  .hello-page-container .staff-name-position:last-child,
+  .hello-page-container .staff-bios:last-child,
+  .hello-page-container .hello-page-bottom-content:last-child {
+    margin-right: 0;
+  }
+}
+
+.hello-page-name-position-section {
+  background: url("assets/img/chef.jpg") no-repeat center;
+  margin-bottom: 30px;
+  height: 233px;
+  padding-top: 50px;
+  display: inline-block;
 }
 
 /* # Sidebars

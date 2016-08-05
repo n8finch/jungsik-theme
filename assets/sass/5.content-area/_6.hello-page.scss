@@ -1,0 +1,32 @@
+.hello-page-container {
+  @include outer-container;
+  $mobile: new-breakpoint(max-width 860px 4);
+
+  .hello-subtitle,
+  .hello-page-content,
+  .staff-name-position,
+  .staff-bios,
+  .hello-page-bottom-content{
+    @include span-columns(6);
+    @include shift(3);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+
+    margin-bottom: 20px;
+
+  }
+
+}
+
+
+.hello-page-name-position-section {
+  background: url("assets/img/chef.jpg") no-repeat center;
+  margin-bottom: 30px;
+  height: 233px;
+  padding-top: 50px;
+  display: inline-block;
+
+}

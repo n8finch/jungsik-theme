@@ -13,16 +13,24 @@ module.exports = function (grunt) {
       }
     },
 
-    // copy: {
-    //   main: {
-    //     expand: true,
-    //     cwd: 'bower_components/bootstrap/dist/fonts/',
-    //     src: '**',
-    //     dest: 'bsfonts/',
-    //     flatten: true,
-    //     filter: 'isFile'
-    //   }
-    // },
+    copy: {
+      bourbon: {
+        expand: true,
+        cwd: 'node_modules/bourbon/app/assets/stylesheets/',
+        src: '**',
+        dest: 'assets/sass/bourbon',
+        flatten: false,
+        filter: 'isFile'
+      },
+      neat: {
+        expand: true,
+        cwd: 'node_modules/bourbon-neat/app/assets/stylesheets/',
+        src: '**',
+        dest: 'assets/sass/neat',
+        flatten: false,
+        filter: 'isFile'
+      }
+    },
 
     sass: {                              // Task
       dist: {                            // Target
@@ -85,5 +93,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['jshint', 'sass', 'watch']);
   grunt.registerTask('post', 'postcss');
+  grunt.registerTask('update', 'copy', 'sass');
+
 
 };
