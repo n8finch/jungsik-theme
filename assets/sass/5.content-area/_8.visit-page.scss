@@ -1,0 +1,32 @@
+.visit-page-container {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -27px;
+  padding-top: 20px;
+  position: relative;
+
+  .visit-page-subtitle {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+    h3 {
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+  }
+
+  .visit-page-content {
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+  }
+
+  .visit-page-map-main-pic {
+  }
+
+  .visit-page-bottom-content {
+    margin-top: 20px;
+  }
+}

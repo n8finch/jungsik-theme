@@ -1782,6 +1782,28 @@ address {
   text-transform: uppercase;
 }
 
+.visit-page-container {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -27px;
+  padding-top: 20px;
+  position: relative;
+}
+.visit-page-container .visit-page-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.visit-page-container .visit-page-subtitle h3 {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.visit-page-container .visit-page-content h3 {
+  font-size: 1.2rem;
+}
+.visit-page-container .visit-page-bottom-content {
+  margin-top: 20px;
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {

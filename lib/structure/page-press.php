@@ -16,7 +16,25 @@ function customize_press_page() {
 
 function add_bar_page_contents() {
 
+	//Get the data
+	$press_items = get_field('press_items');
 
+	echo '<div class="press-items">';
+
+	foreach ( $press_items as $row ) {
+		echo '<div class="press-item">' .
+		     '<img src="'.$row["press_item_image"].'"/>' .
+		     '<br/>' .
+		     $row['press_item_title'] .
+		     '<br/>' .
+		     $row['press_item_content'] .
+		     '<br/>' .
+		     $row['press_item_link'] .
+		     '<hr/>' .
+		     '</div>';
+	}
+
+	echo '</div>';
 }
 
 
