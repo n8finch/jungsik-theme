@@ -1244,6 +1244,9 @@ img.alignright,
 }
 .title-area .links-before-header .language-links {
   float: left;
+  color: #BA8748;
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
 .title-area .links-before-header .facebook-links {
   float: right;
@@ -1682,6 +1685,12 @@ address {
   }
 }
 
+.eat-page-icons {
+  display: block;
+  margin: 20px auto;
+  clear: both;
+}
+
 .choice-menu-items {
   margin-top: 20px;
   max-width: 1200px;
@@ -1763,6 +1772,14 @@ address {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 20px auto;
+}
+
+.tasting-menu-items .tasting-menu-item {
+  margin: 20px auto;
+}
+.tasting-menu-items .tasting-menu-price,
+.tasting-menu-items .wine-pairing-price {
+  text-transform: uppercase;
 }
 
 /* # Sidebars
@@ -1977,6 +1994,7 @@ address {
     right: 0;
     z-index: 1000;
     width: 100%;
+    color: #BA8748;
   }
 
   .site-header .menu-toggle {

@@ -21,6 +21,13 @@
 
 }
 
+.eat-page-icons {
+  display: block;
+  margin: 20px auto;
+  clear: both;
+
+}
+
 
 .choice-menu-items {
 
@@ -68,9 +75,19 @@
   }
 }
 
-
 .choice-menu-items-headers {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 20px auto;
+}
+
+.tasting-menu-items {
+  .tasting-menu-item {
+    margin: 20px auto;
+  }
+
+  .tasting-menu-price,
+  .wine-pairing-price {
+    text-transform: uppercase;
+  }
 }
