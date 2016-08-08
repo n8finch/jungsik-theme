@@ -808,7 +808,6 @@ th:first-child {
   font-size: 1.2rem;
   min-height: 75vh;
   text-align: center;
-  padding: 10px 20px;
 }
 
 .landing-page .site-inner {
@@ -1611,6 +1610,7 @@ address {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 20px;
 }
 .hello-page-container::after {
   clear: both;
@@ -1669,7 +1669,7 @@ address {
   padding: 10px 0;
   display: flex;
   max-width: 550px;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 .eat-page-menu-links .eat-page-menu-link {
   font-size: 1.5rem;
@@ -1808,6 +1808,7 @@ address {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 .press-items::after {
   clear: both;

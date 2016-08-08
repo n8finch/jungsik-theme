@@ -2,6 +2,8 @@
   @include outer-container;
   $mobile: new-breakpoint(max-width 860px 4);
 
+  padding-top: 20px;
+
   .hello-subtitle,
   .hello-page-content,
   .staff-name-position,

@@ -16,7 +16,13 @@ function customize_photo_page() {
 
 function add_bar_page_contents() {
 
+	// Get data
 
+	$master_slider_photos_page = get_field('master_slider_photos_page');
+
+	echo '<div class="photo-slider-container">';
+	masterslider($master_slider_photos_page);
+	echo '</div>';
 }
 
 
