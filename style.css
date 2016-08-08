@@ -145,14 +145,18 @@ textarea:focus,
 }
 
 a {
-  color: #c3251d;
-  text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #333;
-  text-decoration: none;
+  color: #ccc;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 p {
@@ -1656,6 +1660,109 @@ address {
   height: 233px;
   padding-top: 50px;
   display: inline-block;
+}
+
+.eat-page-menu-links {
+  padding: 10px 0;
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+}
+.eat-page-menu-links .eat-page-menu-link {
+  font-size: 1.5rem;
+  padding: 0 5%;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex: 1;
+}
+@media only screen and (max-width: 600px) {
+  .eat-page-menu-links .eat-page-menu-link {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+.choice-menu-items {
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.choice-menu-items::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.choice-menu-items .appetizer-menu-items {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 8.5298%;
+}
+.choice-menu-items .appetizer-menu-items:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  .choice-menu-items .appetizer-menu-items {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .choice-menu-items .appetizer-menu-items:last-child {
+    margin-right: 0;
+  }
+}
+.choice-menu-items .appetizer-menu-items .appetizer-menu-item {
+  margin: 20px auto;
+}
+.choice-menu-items .rice-noodle-menu-items,
+.choice-menu-items .seafood-menu-items,
+.choice-menu-items .land-menu-items,
+.choice-menu-items .sweet-menu-items {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 0%;
+}
+.choice-menu-items .rice-noodle-menu-items div,
+.choice-menu-items .seafood-menu-items div,
+.choice-menu-items .land-menu-items div,
+.choice-menu-items .sweet-menu-items div {
+  margin: 20px auto;
+}
+.choice-menu-items .rice-noodle-menu-items:last-child,
+.choice-menu-items .seafood-menu-items:last-child,
+.choice-menu-items .land-menu-items:last-child,
+.choice-menu-items .sweet-menu-items:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  .choice-menu-items .rice-noodle-menu-items,
+  .choice-menu-items .seafood-menu-items,
+  .choice-menu-items .land-menu-items,
+  .choice-menu-items .sweet-menu-items {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .choice-menu-items .rice-noodle-menu-items:last-child,
+  .choice-menu-items .seafood-menu-items:last-child,
+  .choice-menu-items .land-menu-items:last-child,
+  .choice-menu-items .sweet-menu-items:last-child {
+    margin-right: 0;
+  }
+}
+
+.choice-menu-items-headers {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 20px auto;
 }
 
 /* # Sidebars

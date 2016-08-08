@@ -1,0 +1,76 @@
+.eat-page-menu-links {
+  padding: 10px 0;
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+
+
+  .eat-page-menu-link {
+    font-size: 1.5rem;
+    padding: 0 5%;
+    text-transform: uppercase;
+    font-weight: 600;
+    flex: 1;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1rem;
+      padding: 0;
+    }
+
+  }
+
+}
+
+
+.choice-menu-items {
+
+  margin-top: 20px;
+
+
+  @include outer-container;
+  $mobile: new-breakpoint(max-width 600px 4);
+
+  .appetizer-menu-items {
+
+    @include span-columns(2);
+    @include shift(1);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+
+    .appetizer-menu-item {
+      margin: 20px auto;
+    }
+  }
+
+  .rice-noodle-menu-items,
+  .seafood-menu-items,
+  .land-menu-items,
+  .sweet-menu-items {
+
+    div {
+
+      margin: 20px auto;
+
+    }
+
+    @include span-columns(2);
+    @include shift(0);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+
+
+  }
+}
+
+
+.choice-menu-items-headers {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 20px auto;
+}

@@ -57,14 +57,18 @@ textarea:focus,
 }
 
 a {
-  color: #c3251d;
-  text-decoration: underline;
+  color: $white;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #333;
-  text-decoration: none;
+  color: #ccc;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 p {
