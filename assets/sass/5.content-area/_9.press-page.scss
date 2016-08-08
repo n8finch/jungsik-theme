@@ -1,0 +1,30 @@
+.press-items {
+  @include outer-container;
+  $mobile: new-breakpoint(max-width 600px 4);
+
+  .press-item {
+
+    @include span-columns(6);
+    @include shift(3);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+
+    .press-item-pic {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+
+    hr {
+      max-width: 100px;
+      margin: 20px auto
+    }
+  }
+}

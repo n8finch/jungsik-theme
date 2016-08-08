@@ -1804,6 +1804,50 @@ address {
   margin-top: 20px;
 }
 
+.press-items {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.press-items::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.press-items .press-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+}
+.press-items .press-item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  .press-items .press-item {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .press-items .press-item:last-child {
+    margin-right: 0;
+  }
+}
+.press-items .press-item .press-item-pic {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+.press-items .press-item h3 {
+  font-size: 1.2rem;
+}
+.press-items .press-item hr {
+  max-width: 100px;
+  margin: 20px auto;
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {
