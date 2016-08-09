@@ -24,8 +24,3 @@ include_once( get_template_directory() . '/lib/init.php' );
 //TODO Come back and re-arrange this to another part of the theme
 remove_action( 'genesis_after_header', 'genesis_do_nav');
 
-//TODO fix favicon
-//add_filter( 'genesis_pre_load_favicon', __NAMESPACE__ . '\do_child_favicon' );
-//function do_child_favicon( $favicon_url ) {
-//	return CHILD_THEME_DIR . '/assets/img/favicon.png';
-//}

@@ -26,24 +26,38 @@ function add_hello_page_contents() {
 	echo '<div class="hello-page-content">' . $hello_page_content . '</div>';
 	echo '<div class="hello-page-name-position-section">';
 
-	foreach ( $staff_names_positions as $row ) {
-		echo '<div class="staff-name-position">' .
-		     $row['staff_name'] .
+	for ( $i=0; $i < sizeof($staff_names_positions); $i++ ) {
+
+		//Get left or right class for names
+
+		$right_or_left = '';
+
+		if( $i === 0) {
+			$right_or_left = '';
+		} elseif( 0 === $i%2 ) {
+			$right_or_left = 'staff-name-position-right';
+		} else {
+			$right_or_left = 'staff-name-position-left';
+		}
+
+		//Echo the names and positions
+		echo '<a href="" data-staff-pair="staff-bio-'.$i.'" class="staff-name-links"><div id="staff-name-'.$i.'" class="staff-name-position '.$right_or_left.'">' .
+		     $staff_names_positions[$i]['staff_name'] .
 		     '<br/>' .
-		     $row['staff_position'] .
-		     '</div>';
+		     $staff_names_positions[$i]['staff_position'] .
+		     '</div></a>';
 	}
 
 	echo '</div>'; //end hello-page-name-position-section
 
 
-	foreach ( $staff_names_positions as $row ) {
-		echo '<div class="staff-bios">' .
-		     $row['staff_name'] .
+	for ( $i=0; $i < sizeof($staff_names_positions); $i++ ) {
+		echo '<div id="staff-bio-'.$i.'" class="staff-bios">' .
+		     $staff_names_positions[$i]['staff_name'] .
 		     '<br/>' .
-		     $row['staff_position'] .
+		     $staff_names_positions[$i]['staff_position'] .
 		     '<br/>' .
-		     $row['staff_bio'] .
+		     $staff_names_positions[$i]['staff_bio'] .
 		     '<p>___________</p>' .
 		     '</div>';
 	}

@@ -41,8 +41,8 @@ function add_bar_page_contents() {
 
 	//Eat page Menu Links
 	echo '<div class="eat-page-menu-links">';
-	echo '<a class="eat-page-menu-link" href="#">Choice Menu</a>';
-	echo '<a class="eat-page-menu-link" href="#">Tasting Menu</a>';
+	echo '<a id="choice-menu-link" class="eat-page-menu-link" href="#">Choice Menu</a>';
+	echo '<a id="tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Menu</a>';
 	echo '<a class="eat-page-menu-link" href="' . $wine_list_upload . '" target="_blank">Wine List</a>';
 	echo '</div>';
 

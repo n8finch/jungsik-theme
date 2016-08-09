@@ -30,5 +30,14 @@ function enqueue_scripts_styles() {
 	);
 	wp_localize_script( CHILD_TEXT_DOMAIN . '-responsive-menu', 'n8finchL10n', $localized_script_args );
 
+	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-custom-js', CHILD_URL . '/assets/js/custom.js', array( 'jquery' ), 'CHILD_THEME_VERSION', true );
 }
 
+
+add_filter( 'genesis_pre_load_favicon', __NAMESPACE__ . '\do_child_favicon' );
+function do_child_favicon( $favicon_url ) {
+
+	$favicon_url = CHILD_THEME_DIR . '/assets/img/favicon.ico';
+
+	return $favicon_url;
+}
