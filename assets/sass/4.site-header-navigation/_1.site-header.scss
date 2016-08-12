@@ -1,11 +1,14 @@
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
-
 .site-header {
   background-color: #fff;
   max-height: 255px;
   overflow: auto;
+
+  @media only screen and (max-width: 1023px) {
+    max-height: none;
+  }
 }
 
 .site-header > .wrap {

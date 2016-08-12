@@ -66,5 +66,3 @@ function add_hello_page_contents() {
 	echo '</div>'; //end hello-page-container
 
 }
-
-
