@@ -28,6 +28,19 @@ function add_bar_page_contents() {
 
 	echo '<div class="visit-page-content">' . $visit_page_content . '</div>';
 
+	echo '<div class="modal">
+  <label for="modal-1">
+    <div class="modal-trigger">Click for Modal</div>
+  </label>
+  <input class="modal-state" id="modal-1" type="checkbox" />
+  <div class="modal-fade-screen">
+    <div class="modal-inner">
+      <div class="modal-close" for="modal-1"></div>
+      <script type=\'text/javascript\' src=\'//secure.opentable.com/widget/reservation/loader?rid=63064&domain=com&type=standard&theme=tall&lang=en&overlay=false&iframe=true\'></script>
+    </div>
+  </div>
+</div>';
+
 	echo '<div class="visit-page-map-main-pic"><img src="' . $main_map_picture . '"/></div>';
 
 	echo '<div class="visit-page-bottom-content">' . $visit_page_bottom_content . '</div>';
