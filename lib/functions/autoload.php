@@ -34,6 +34,7 @@ function load_nonadmin_files() {
 		'structure/page-visit.php',
 		'structure/page-press.php',
 		'structure/page-photo.php',
+		'structure/page-404.php',
 		'structure/header.php',
 		'structure/home.php',
 		'structure/menu.php',

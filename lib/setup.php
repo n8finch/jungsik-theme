@@ -74,6 +74,21 @@ function add_theme_supports() {
 //* Add Image Sizes
 	add_image_size( 'featured-image', 720, 400, true );
 
+	//* Unregister content/sidebar layout setting
+	genesis_unregister_layout( 'content-sidebar' );
+
+	//* Unregister sidebar/content layout setting
+	genesis_unregister_layout( 'sidebar-content' );
+
+	//* Unregister content/sidebar/sidebar layout setting
+	genesis_unregister_layout( 'content-sidebar-sidebar' );
+
+	//* Unregister sidebar/sidebar/content layout setting
+	genesis_unregister_layout( 'sidebar-sidebar-content' );
+
+	//* Unregister sidebar/content/sidebar layout setting
+	genesis_unregister_layout( 'sidebar-content-sidebar' );
+
 }
 
 /**

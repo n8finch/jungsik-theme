@@ -30,7 +30,7 @@ function add_bar_page_contents() {
 
 	echo '<div class="modal">
   <label for="modal-1">
-    <div class="modal-trigger">Click for Modal</div>
+    <div class="modal-trigger"><strong>Online Reservations</strong></div>
   </label>
   <input class="modal-state" id="modal-1" type="checkbox" />
   <div class="modal-fade-screen">
