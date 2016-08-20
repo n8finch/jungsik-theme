@@ -809,6 +809,11 @@ th:first-child {
   min-height: 75vh;
   text-align: center;
 }
+@media only screen and (max-width: 860px) {
+  .site-inner {
+    padding: 0;
+  }
+}
 
 .landing-page .site-inner {
   max-width: 800px;
@@ -2329,10 +2334,6 @@ div.staff-name-position.staff-name-position-right {
   body {
     font-size: 18px;
     font-size: 1.8rem;
-  }
-
-  .site-inner {
-    padding: 5% 5% 0;
   }
 
   .wrap {

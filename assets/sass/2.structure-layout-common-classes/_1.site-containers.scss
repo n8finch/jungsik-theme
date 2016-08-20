@@ -11,6 +11,7 @@
   @media only screen and (max-width: 1340px) {
     max-width: 100%;
   }
+
 }
 
 .site-inner {
@@ -21,6 +22,10 @@
   font-size: 1.2rem;
   min-height: 75vh;
   text-align: center;
+
+  @media only screen and (max-width: 860px) {
+    padding: 0;
+  }
 }
 
 .landing-page .site-inner {
