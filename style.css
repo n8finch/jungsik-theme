@@ -5,12 +5,11 @@
 	Author: Nate Finch
 	Author URI: http://www.n8finch.com/
 
-	Version: 1.0.0
+	Version: 1.0.11
 
 	Tags: genesis
 
 	Template: genesis
-	Template Version: 2.2.3
 
 	Text Domain: n8finch-dev-theme
 
@@ -120,10 +119,9 @@ body {
   background-color: #eee;
   color: #333;
   font-family: 'MyFontFamily', 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.625;
   margin: 0;
 }
@@ -1254,8 +1252,10 @@ img.alignright,
 .title-area .links-before-header .language-links {
   float: left;
   color: #BA8748;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin-right: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 .title-area .links-before-header .facebook-links {
   float: right;
@@ -1608,6 +1608,7 @@ address {
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 5px;
+  font-weight: 400;
 }
 
 .front-page-image {
