@@ -168,7 +168,7 @@ function add_bar_page_contents() {
 
 	echo '</div>'; // end tasting-menu-items
 
-	echo '<a href="http://www.facebook.com/sharer.php?u=' . get_permalink( $post_ID ) . '" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/intent/tweet?url=' . get_permalink( $post_ID ) . '%2F&text=Check%20this%20out:%20&via=jungsikdang" target="_blank"><span class="fa fa-twitter fa"></span></a>';
+	echo '<a href="https://www.facebook.com/jungsikdang/" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/JUNGSIKDANG" target="_blank"><span class="fa fa-twitter fa"></span></a>';
 	echo '</div>'; // end eat-page-menu-items
 
 }

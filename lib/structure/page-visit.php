@@ -43,7 +43,9 @@ function add_bar_page_contents() {
 
 	echo '<div class="visit-page-map-main-pic"><img src="' . $main_map_picture . '"/></div>';
 
-	echo '<div class="visit-page-bottom-content">' . $visit_page_bottom_content . '</div>';
+	echo '<div class="visit-page-bottom-content">' . $visit_page_bottom_content;
+	echo '<a href="https://www.facebook.com/jungsikdang/" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/JUNGSIKDANG" target="_blank"><span class="fa fa-twitter fa"></span></a>';
+	echo '</div>';
 
 	echo '</div>';// end visit-page-container
 

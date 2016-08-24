@@ -32,6 +32,8 @@ function add_bar_page_contents() {
 		     '</div>';
 	}
 
+	echo '<div class="press-item"><a href="https://www.facebook.com/jungsikdang/" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/JUNGSIKDANG" target="_blank"><span class="fa fa-twitter fa"></span></a></div>';
+
 	echo '</div>';
 }
 

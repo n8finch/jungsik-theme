@@ -62,7 +62,9 @@ function add_hello_page_contents() {
 		     '</div>';
 	}
 
-	echo '<div class="hello-page-bottom-content">' . $hello_page_bottom_content . '</div>';
+	echo '<div class="hello-page-bottom-content">' . $hello_page_bottom_content ;
+	echo '<a href="https://www.facebook.com/jungsikdang/" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/JUNGSIKDANG" target="_blank"><span class="fa fa-twitter fa"></span></a>';
+	echo '</div>';
 	echo '</div>'; //end hello-page-container
 
 }
