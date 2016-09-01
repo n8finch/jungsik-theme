@@ -27,7 +27,7 @@ function add_links_before_header() {
 
 	$output = '<div class="links-before-header">';
 	$output .= '<a href="/" class="language-links">New York</a><a href="/seoul" class="language-links">Seoul</a>';
-	$output .= '<div class="facebook-links">' . $facebook_like . '</div>';
+//	$output .= '<div class="facebook-links">' . $facebook_like . '</div>';
 	$output .= '</div>'; //end links-before-header
 	echo $output;
 }
