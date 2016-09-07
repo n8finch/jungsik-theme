@@ -3,6 +3,7 @@
   display: flex;
   max-width: 550px;
   margin: 20px auto 0;
+  letter-spacing: 4px;
 
 
   .eat-page-menu-link {
@@ -35,17 +36,25 @@
 
 
   @include outer-container;
+  $tablet: new-breakpoint(max-width 1023px 12);
   $mobile: new-breakpoint(max-width 600px 4);
 
   .appetizer-menu-items {
 
-    @include span-columns(2);
-    @include shift(1);
+    @include span-columns(1.2);
+    @include shift(3);
+
+    @include media($tablet) {
+      @include span-columns(2);
+      @include shift(1);
+    }
 
     @include media($mobile) {
       @include span-columns(4);
       @include shift(0);
+
     }
+
 
     .appetizer-menu-item {
       margin: 20px auto;
@@ -57,18 +66,25 @@
   .land-menu-items,
   .sweet-menu-items {
 
+
     div {
 
       margin: 20px auto;
 
     }
 
-    @include span-columns(2);
+    @include span-columns(1.2);
     @include shift(0);
+
+    @include media($tablet) {
+      @include span-columns(2);
+      @include shift(0);
+    }
 
     @include media($mobile) {
       @include span-columns(4);
       @include shift(0);
+
     }
 
 
@@ -77,8 +93,11 @@
 
 .choice-menu-items-headers {
   font-size: 1.2rem;
-  text-transform: uppercase;
   margin: 20px auto;
+}
+
+.menu-item-header {
+  letter-spacing: 4px;
 }
 
 .tasting-menu-items {

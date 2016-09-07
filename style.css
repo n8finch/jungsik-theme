@@ -121,7 +121,7 @@ body {
   font-family: 'MyFontFamily', 'Source Sans Pro', sans-serif;
   font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.625;
   margin: 0;
 }
@@ -1667,6 +1667,10 @@ address {
     margin-right: 0;
   }
 }
+.hello-page-container .hello-subtitle {
+  letter-spacing: 7px;
+  font-weight: 600;
+}
 
 .hello-page-name-position-section {
   background: url("assets/img/chef.jpg") no-repeat center;
@@ -1674,6 +1678,11 @@ address {
   height: 233px;
   padding-top: 50px;
   display: inline-block;
+}
+@media only screen and (max-width: 860px) {
+  .hello-page-name-position-section {
+    height: 350px;
+  }
 }
 
 div.staff-name-position.staff-name-position-left {
@@ -1691,6 +1700,7 @@ div.staff-name-position.staff-name-position-right {
   display: flex;
   max-width: 550px;
   margin: 20px auto 0;
+  letter-spacing: 4px;
 }
 .eat-page-menu-links .eat-page-menu-link {
   font-size: 1.2rem;
@@ -1727,11 +1737,23 @@ div.staff-name-position.staff-name-position-right {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%;
-  margin-left: 8.5298%;
+  width: 7.87811%;
+  margin-left: 25.58941%;
 }
 .choice-menu-items .appetizer-menu-items:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 1023px) {
+  .choice-menu-items .appetizer-menu-items {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 8.5298%;
+  }
+  .choice-menu-items .appetizer-menu-items:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .choice-menu-items .appetizer-menu-items {
@@ -1755,7 +1777,7 @@ div.staff-name-position.staff-name-position-right {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%;
+  width: 7.87811%;
   margin-left: 0%;
 }
 .choice-menu-items .rice-noodle-menu-items div,
@@ -1769,6 +1791,24 @@ div.staff-name-position.staff-name-position-right {
 .choice-menu-items .land-menu-items:last-child,
 .choice-menu-items .sweet-menu-items:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 1023px) {
+  .choice-menu-items .rice-noodle-menu-items,
+  .choice-menu-items .seafood-menu-items,
+  .choice-menu-items .land-menu-items,
+  .choice-menu-items .sweet-menu-items {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 0%;
+  }
+  .choice-menu-items .rice-noodle-menu-items:last-child,
+  .choice-menu-items .seafood-menu-items:last-child,
+  .choice-menu-items .land-menu-items:last-child,
+  .choice-menu-items .sweet-menu-items:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .choice-menu-items .rice-noodle-menu-items,
@@ -1791,8 +1831,11 @@ div.staff-name-position.staff-name-position-right {
 
 .choice-menu-items-headers {
   font-size: 1.2rem;
-  text-transform: uppercase;
   margin: 20px auto;
+}
+
+.menu-item-header {
+  letter-spacing: 4px;
 }
 
 .tasting-menu-items .tasting-menu-item {
@@ -1812,7 +1855,7 @@ div.staff-name-position.staff-name-position-right {
 }
 .visit-page-container .visit-page-subtitle {
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
 }
 .visit-page-container .visit-page-subtitle h3 {
   font-size: 1.2rem;

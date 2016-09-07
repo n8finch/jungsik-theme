@@ -59,9 +59,9 @@ function add_bar_page_contents() {
 
 	foreach ( $appetizer_menu_items as $row ) {
 		echo '<div class="appetizer-menu-item">' .
-		     $row['appetizer_name_english'] .
+		     '<span class="menu-item-header">' . $row['appetizer_name_english'] . '</span>' .
 		     '<br/>' .
-		     $row['appetizer_name_korean'] .
+		     '<span class="menu-item-header">' . $row['appetizer_name_korean'] . '</span>' .
 		     '<br/>' .
 		     $row['appetizer_description'] .
 		     '<br/>' .
@@ -77,9 +77,9 @@ function add_bar_page_contents() {
 
 	foreach ( $rice_noodle_menu_items as $row ) {
 		echo '<div class="appetizer-menu-item">' .
-		     $row['rice_noodle_name_english'] .
+		     '<span class="menu-item-header">' . $row['rice_noodle_name_english'] . '</span>' .
 		     '<br/>' .
-		     $row['rice_noodle_name_korean'] .
+		     '<span class="menu-item-header">' . $row['rice_noodle_name_korean'] . '</span>' .
 		     '<br/>' .
 		     $row['rice_noodle_description'] .
 		     '<br/>' .
@@ -94,9 +94,9 @@ function add_bar_page_contents() {
 
 	foreach ( $seafood_menu_items as $row ) {
 		echo '<div class="appetizer-menu-item">' .
-		     $row['seafood_name_english'] .
+		     '<span class="menu-item-header">' . $row['seafood_name_english'] . '</span>' .
 		     '<br/>' .
-		     $row['seafood_name_korean'] .
+		     '<span class="menu-item-header">' . $row['seafood_name_korean'] . '</span>' .
 		     '<br/>' .
 		     $row['seafood_description'] .
 		     '<br/>' .
@@ -112,9 +112,9 @@ function add_bar_page_contents() {
 
 	foreach ( $land_menu_items as $row ) {
 		echo '<div class="appetizer-menu-item">' .
-		     $row['land_name_english'] .
+		     '<span class="menu-item-header">' . $row['land_name_english'] . '</span>' .
 		     '<br/>' .
-		     $row['land_name_korean'] .
+		     '<span class="menu-item-header">' . $row['land_name_korean'] . '</span>' .
 		     '<br/>' .
 		     $row['land_description'] .
 		     '<br/>' .
@@ -130,9 +130,9 @@ function add_bar_page_contents() {
 
 	foreach ( $sweet_menu_items as $row ) {
 		echo '<div class="appetizer-menu-item">' .
-		     $row['sweet_name_english'] .
+		     '<span class="menu-item-header">' . $row['sweet_name_english'] . '</span>' .
 		     '<br/>' .
-		     $row['sweet_name_korean'] .
+		     '<span class="menu-item-header">' . $row['sweet_name_korean'] . '</span>' .
 		     '<br/>' .
 		     $row['sweet_description'] .
 		     '<br/>' .
@@ -153,9 +153,9 @@ function add_bar_page_contents() {
 
 	foreach ( $tasting_menu_selections as $row ) {
 		echo '<div class="tasting-menu-item">' .
-		     $row['tasting_item_name_english'] .
+		     '<span class="menu-item-header">' . $row['tasting_item_name_english'] . '</span>' .
 		     '<br/>' .
-		     $row['tasting_item_name_korean'] .
+		     '<span class="menu-item-header">' . $row['tasting_item_name_korean'] . '</span>' .
 		     '<br/>' .
 		     $row['tasting_item_description'] .
 		     '</div>';
