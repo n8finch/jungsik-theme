@@ -1751,7 +1751,7 @@ div.staff-name-position.staff-name-position-right {
   display: block;
   margin-right: 2.35765%;
   width: 7.87811%;
-  margin-left: 23.03047%;
+  margin-left: 22.17749%;
 }
 .choice-menu-items .appetizer-menu-items:last-child {
   margin-right: 0;
@@ -1762,7 +1762,7 @@ div.staff-name-position.staff-name-position-right {
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%;
-    margin-left: 17.05961%;
+    margin-left: 0%;
   }
   .choice-menu-items .appetizer-menu-items:last-child {
     margin-right: 0;
@@ -1795,6 +1795,12 @@ div.staff-name-position.staff-name-position-right {
 .choice-menu-items .appetizer-menu-items .appetizer-menu-item {
   margin: 20px auto;
 }
+@media screen and (min-width: 1024px) {
+  .choice-menu-items .appetizer-menu-items .appetizer-menu-item {
+    height: 115px;
+    width: 120px;
+  }
+}
 .choice-menu-items .rice-noodle-menu-items,
 .choice-menu-items .seafood-menu-items,
 .choice-menu-items .land-menu-items,
@@ -1805,6 +1811,21 @@ div.staff-name-position.staff-name-position-right {
   margin-right: 2.35765%;
   width: 7.87811%;
   margin-left: 0%;
+}
+.choice-menu-items .rice-noodle-menu-items .appetizer-menu-item,
+.choice-menu-items .seafood-menu-items .appetizer-menu-item,
+.choice-menu-items .land-menu-items .appetizer-menu-item,
+.choice-menu-items .sweet-menu-items .appetizer-menu-item {
+  margin: 20px auto;
+}
+@media screen and (min-width: 1024px) {
+  .choice-menu-items .rice-noodle-menu-items .appetizer-menu-item,
+  .choice-menu-items .seafood-menu-items .appetizer-menu-item,
+  .choice-menu-items .land-menu-items .appetizer-menu-item,
+  .choice-menu-items .sweet-menu-items .appetizer-menu-item {
+    height: 115px;
+    width: 120px;
+  }
 }
 .choice-menu-items .rice-noodle-menu-items div,
 .choice-menu-items .seafood-menu-items div,
@@ -1859,10 +1880,11 @@ div.staff-name-position.staff-name-position-right {
   font-size: 1.2rem;
   margin: 20px auto;
   font-weight: 400;
+  width: 120px;
 }
 
 .menu-item-header {
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 .tasting-menu-items .tasting-menu-item {

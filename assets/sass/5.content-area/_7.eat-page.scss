@@ -36,6 +36,7 @@
 
 
   @include outer-container;
+  $desktop: new-breakpoint(min-width 1024px 12);
   $tablet: new-breakpoint(max-width 1023px 12);
   $tablet2: new-breakpoint(max-width 961px 12);
   $mobile: new-breakpoint(max-width 600px 4);
@@ -45,11 +46,11 @@
     margin-right: 3.5em !important;
 
     @include span-columns(1.2);
-    @include shift(2.7);
+    @include shift(2.6);
 
     @include media($tablet) {
       @include span-columns(2);
-      @include shift(2);
+      @include shift(0);
     }
 
     @include media($tablet2) {
@@ -66,6 +67,10 @@
 
     .appetizer-menu-item {
       margin: 20px auto;
+      @include media($desktop) {
+        height: 115px;
+        width: 120px;
+      }
     }
   }
 
@@ -75,6 +80,14 @@
   .sweet-menu-items {
 
     margin-right: 3.5em !important;
+
+    .appetizer-menu-item {
+      margin: 20px auto;
+      @include media($desktop) {
+        height: 115px;
+        width: 120px;
+      }
+    }
 
 
     div {
@@ -105,10 +118,11 @@
   font-size: 1.2rem;
   margin: 20px auto;
   font-weight: 400;
+  width: 120px;
 }
 
 .menu-item-header {
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 .tasting-menu-items {
