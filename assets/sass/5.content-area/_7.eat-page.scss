@@ -37,14 +37,22 @@
 
   @include outer-container;
   $tablet: new-breakpoint(max-width 1023px 12);
+  $tablet2: new-breakpoint(max-width 961px 12);
   $mobile: new-breakpoint(max-width 600px 4);
 
   .appetizer-menu-items {
 
+    margin-right: 3.5em !important;
+
     @include span-columns(1.2);
-    @include shift(3);
+    @include shift(2.7);
 
     @include media($tablet) {
+      @include span-columns(2);
+      @include shift(2);
+    }
+
+    @include media($tablet2) {
       @include span-columns(2);
       @include shift(1);
     }
@@ -65,6 +73,8 @@
   .seafood-menu-items,
   .land-menu-items,
   .sweet-menu-items {
+
+    margin-right: 3.5em !important;
 
 
     div {
@@ -94,6 +104,7 @@
 .choice-menu-items-headers {
   font-size: 1.2rem;
   margin: 20px auto;
+  font-weight: 400;
 }
 
 .menu-item-header {

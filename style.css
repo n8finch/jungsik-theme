@@ -1274,6 +1274,9 @@ img.alignright,
   letter-spacing: 7px;
   clear: both;
 }
+.site-title a {
+  font-size: 13px;
+}
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
@@ -1293,6 +1296,7 @@ img.alignright,
   float: left;
   min-height: 80px;
   width: 100%;
+  font-size: 13px;
 }
 .header-image .site-description,
 .header-image .site-title {
@@ -1310,6 +1314,14 @@ img.alignright,
 .site-description,
 .site-title {
   margin-bottom: 0;
+}
+
+.front-page-address-phone-image {
+  margin-top: 15px;
+  font-size: 11px;
+}
+.front-page-address-phone-image address {
+  letter-spacing: 4px;
 }
 
 /* ## Widget Area
@@ -1734,16 +1746,29 @@ div.staff-name-position.staff-name-position-right {
   display: block;
 }
 .choice-menu-items .appetizer-menu-items {
+  margin-right: 3.5em !important;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 7.87811%;
-  margin-left: 25.58941%;
+  margin-left: 23.03047%;
 }
 .choice-menu-items .appetizer-menu-items:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 1023px) {
+  .choice-menu-items .appetizer-menu-items {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 17.05961%;
+  }
+  .choice-menu-items .appetizer-menu-items:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 961px) {
   .choice-menu-items .appetizer-menu-items {
     float: left;
     display: block;
@@ -1774,6 +1799,7 @@ div.staff-name-position.staff-name-position-right {
 .choice-menu-items .seafood-menu-items,
 .choice-menu-items .land-menu-items,
 .choice-menu-items .sweet-menu-items {
+  margin-right: 3.5em !important;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -1832,6 +1858,7 @@ div.staff-name-position.staff-name-position-right {
 .choice-menu-items-headers {
   font-size: 1.2rem;
   margin: 20px auto;
+  font-weight: 400;
 }
 
 .menu-item-header {
