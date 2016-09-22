@@ -1680,7 +1680,7 @@ address {
   }
 }
 .hello-page-container .hello-subtitle {
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   font-weight: 600;
 }
 
@@ -1898,7 +1898,7 @@ div.staff-name-position.staff-name-position-right {
 .visit-page-container {
   background-repeat: no-repeat;
   background-position: top;
-  background-position-y: -27px;
+  background-position-y: -13px;
   padding-top: 20px;
   position: relative;
 }
