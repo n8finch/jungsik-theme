@@ -7,8 +7,15 @@ address {
   font-weight: 400;
 }
 
-.front-page-image {
+div.front-page-image {
   background-size: cover;
   background-position: center;
   height: 80vh;
+
+  @media only screen and (max-width: 460px) {
+    background-size: contain !important;
+    background-position: top !important;
+    background-repeat: no-repeat !important;
+  }
+
 }
